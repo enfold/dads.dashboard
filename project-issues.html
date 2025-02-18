@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DADS Dashboard - Project Detail</title>
+    <title>DADS Dashboard - Project Issues</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet">
 </head>
@@ -11,7 +11,7 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <div class="col-md-3 bg-dark min-vh-100">
+            <div class="col-3 bg-dark min-vh-100">
                 <div class="d-flex flex-column flex-shrink-0 p-3 text-white">
                     <span class="fs-4 mb-3">DADS Project Dashboard</span>
                     <hr>
@@ -24,14 +24,14 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white active">
+                            <a href="project-detail.html" class="nav-link text-white">
                                 <svg style="margin-bottom:4px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
                                     <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
                                 </svg> MCM
                             </a>
                             <ul class="nav nav-pills flex-column ms-4">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link text-white">
+                                    <a href="#" class="nav-link text-white active">
                                         <svg style="margin-bottom:4px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bug" viewBox="0 0 16 16">
                                             <path d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6a3.989 3.989 0 0 0-1.334-2.982A3.983 3.983 0 0 0 8 2a3.983 3.983 0 0 0-2.667 1.018A3.989 3.989 0 0 0 4 6h8z"/>
                                         </svg> Project Issues
@@ -45,111 +45,110 @@
             </div>
 
             <!-- Main Content -->
-            <div class="col-md-9 p-4">
+            <div class="col-9 p-4">
                 <h2 class="mb-4" id="project_title">Mobile Content Managment (MCM)</h2>
                 
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Project Details</h5>
-                        <p class="card-text" id="project_description">Complete renovation of two-car garage including new storage solutions, workbench installation, and floor coating.</p>
-                        <a href="#" class="btn btn-outline-primary" id="project-issue-tracker"><svg style="margin-bottom:3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                            <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                          </svg> Issue Tracker</a>
-                        <a href="https://docs.josce.mil/dev/dads-mcm/" target="_blank" class="btn btn-outline-dark" id="project-dads-docs"><svg style="margin-bottom:3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
-                            <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1M3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/>
-                          </svg> DADS Docs</a>
-                        <br />
-                        <hr />
-                        <h6>Foundation Documents</h6>
-                        <ul>
-                            <li><a href="">GREQ</a></li>
-                        </ul>
+                        <h2 class="card-title">Project Issues</h2>
+                        <p class="card-text" id="issues-intro">The following is a list of issues for this project</p>
                     </div>
                 </div>
 
             <div class="table-responsive">
-                <h5>Completed Deliverables</h5>
+                <h5>CLIENT (GOV)  Recent Updates</h5>
+                <h5>Open Issues</h5>
                 <table class="table table-striped table-bordered">
                     <thead class="table-light">
                         <tr>
-                            <th>Status</th>
-                            <th>Deliverable Type</th>
-                            <th>Last Updated</th>
-                            <th>Last Update By</th>   
+                            <th>Issue Title</th>
+                            <th>Issue Created Date</th>
+                            <th>Issue Updated Date</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><span class="badge bg-danger">Required</span></td>
-                            <td><a href="#">VDD (PDF)</a></td>
-                            <td>2024-02-15</td>
-                            <td></td>
+                            <td><a href="#">Issue 1</a></td>
+                            <td>2024-01-15</td>
+                            <td>2024-01-20</td>
                         </tr>
                         <tr>
-                            <td><span class="badge bg-danger">Required</span></td>
-                            <td><a href="#">5 Balls Systems Plan (PDF)</a></td>
-                            <td>2024-02-20</td>
-                            <td></td>
-                        <tr>
-                            <td><span class="badge bg-secondary">Optional</span></td>
-                            <td><a href="#">Information Support Plan (HTML)</a></td>
-                            <td>2024-02-10</td>
-                            <td></td>
+                            <td><a href="#">Issue 2</a></td>
+                            <td>2024-01-18</td>
+                            <td>2024-01-22</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-             <div class="table-responsive">
-                <h5>Required Deliverables</h5>
+
+                <h5>Resolved</h5>
                 <table class="table table-striped table-bordered">
                     <thead class="table-light">
                         <tr>
-                            <th>Status</th>
-                            <th>Deliverable Type</th>
+                            <th>Issue Title</th>
+                            <th>Issue Created Date</th>
+                            <th>Issue Closed Date</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><span class="badge bg-danger">Required</span></td>
-                            <td><a href="#">Security Authorization Package (ATO Package)</a></td>
+                            <td><a href="#">Issue 3</a></td>
+                            <td>2024-01-10</td>
+                            <td>2024-01-15</td>
                         </tr>
                         <tr>
-                            <td><span class="badge bg-danger">Required</span></td>
-                            <td><a href="#">System Security Plan (SSP)</a></td>
-                        </tr>
-                        <tr>
-                            <td><span class="badge bg-secondary">Optional</span></td>
-                            <td><a href="#">Security Assessment Report (SAR)</a></td>
+                            <td><a href="#">Issue 4</a></td>
+                            <td>2024-01-12</td>
+                            <td>2024-01-17</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-            <div class="table-responsive">
-                <h5>Relieved Deliverables</h5>
+
+                <h5>Pending Feedback</h5>
                 <table class="table table-striped table-bordered">
                     <thead class="table-light">
                         <tr>
-                            <th>Status</th>
-                            <th>Deliverable Type</th>
+                            <th>Issue Title</th>
+                            <th>Issue Created Date</th>
+                            <th>Days Pending</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><span class="badge bg-dark">Relieved</span></td>
-                            <td><a href="#">DoDAF OV-6c Event-Trace Description</a></td>
+                            <td><a href="#">Issue 5</a></td>
+                            <td>2024-01-05</td>
+                            <td>10</td>
                         </tr>
                         <tr>
-                            <td><span class="badge bg-dark">Relieved</span></td>
-                            <td><a href="#">DoDAF CV-5 - Capability to Organizational Development Mapping</a></td>
-                        </tr>
-                        <tr>
-                            <td><span class="badge bg-dark">Relieved</span></td>
-                            <td><a href="#">DoDAF OV-5a - Operational Activity Decomposition Tree</a></td>
+                            <td><a href="#">Issue 6</a></td>
+                            <td>2024-01-08</td>
+                            <td>7</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
+
+                <h5>Stalled</h5>
+                <table class="table table-striped table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Issue Title</th>
+                            <th>Assigned</th>
+                            <th>Last Comment on Ticket (Date)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">Issue 7</a></td>
+                            <td>John Doe</td>
+                            <td>2023-12-15</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Issue 8</a></td>
+                            <td>Jane Smith</td>
+                            <td>2023-12-20</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
             </div>
         </div>
     </div>
